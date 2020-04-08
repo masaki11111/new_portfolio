@@ -1,8 +1,25 @@
 @charset "UTF-8";
+.font-std {
+  text-align: center;
+  font-weight: bold;
+}
+
+.border {
+  border-bottom: 1.0rem solid black !important;
+}
+
 html {
   font-size: 62.5%;
 }
-html header {
+@media (min-width: 54rem) {
+  html {
+    font-size: 78.125%;
+  }
+}
+html body {
+  font-size: 1.5em;
+}
+html body header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -15,12 +32,12 @@ html header {
   z-index: 2;
   background-color: #e4e4e4;
 }
-html header .flex {
+html body header .flex {
   display: flex;
   width: 100%;
   align-items: center;
 }
-html header .flex .menu-trigger {
+html body header .flex .menu-trigger {
   display: inline-block;
   position: relative;
   width: 3.6rem;
@@ -28,7 +45,7 @@ html header .flex .menu-trigger {
   vertical-align: middle;
   cursor: pointer;
 }
-html header .flex .menu-trigger span {
+html body header .flex .menu-trigger span {
   display: inline-block;
   box-sizing: border-box;
   position: absolute;
@@ -38,36 +55,37 @@ html header .flex .menu-trigger span {
   background-color: #fff;
   transition: all .5s 0s;
 }
-html header .flex .menu-trigger span:nth-of-type(1) {
+html body header .flex .menu-trigger span:nth-of-type(1) {
   top: 0;
 }
-html header .flex .menu-trigger span:nth-of-type(2) {
+html body header .flex .menu-trigger span:nth-of-type(2) {
   top: 1.2rem;
 }
-html header .flex .menu-trigger span:nth-of-type(3) {
+html body header .flex .menu-trigger span:nth-of-type(3) {
   bottom: 0;
 }
-html header .flex .menu-trigger .active {
+html body header .flex .menu-trigger .active {
   background-color: red;
 }
-html header .flex .menu-trigger .active span:nth-of-type(1) {
+html body header .flex .menu-trigger .active span:nth-of-type(1) {
   transform: translateY(12px) rotate(-45deg);
 }
-html header .flex .menu-trigger .active span:nth-of-type(2) {
+html body header .flex .menu-trigger .active span:nth-of-type(2) {
   opacity: 0;
 }
-html header .flex .menu-trigger .active span:nth-of-type(3) {
+html body header .flex .menu-trigger .active span:nth-of-type(3) {
   transform: translateY(-12px) rotate(45deg);
 }
-html header .flex .icon {
+html body header .flex .icon {
   font-weight: bold;
   margin-left: auto;
+  font-family: Times New Roman;
   color: white;
 }
-html main .pagetop {
+html body main .pagetop {
   position: relative;
 }
-html main .pagetop .icon {
+html body main .pagetop .icon {
   position: fixed;
   background-color: #ececec;
   width: 4.0rem;
@@ -78,11 +96,11 @@ html main .pagetop .icon {
   right: 1.0rem;
   z-index: 9999;
 }
-html main .bk {
+html body main .bk {
   width: 100%;
   height: 6.0rem;
 }
-html main nav {
+html body main nav {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -93,22 +111,22 @@ html main nav {
   left: 0;
   z-index: 1;
 }
-html main nav ul {
+html body main nav ul {
   padding: 2.0rem 0;
 }
-html main nav ul li {
+html body main nav ul li {
   padding: 0.5rem 0;
 }
-html main nav ul li:hover {
+html body main nav ul li:hover {
   transition: all .5s 0s;
   color: red;
 }
-html main nav ul li:nth-of-type(1) {
+html body main nav ul li:nth-of-type(1) {
   display: inline-block;
   box-sizing: border-box;
   border-bottom: 2px solid red;
 }
-html main .cover {
+html body main .cover {
   background: url("img/header_3_2.jpg");
   background-size: cover;
   position: relative;
@@ -117,7 +135,7 @@ html main .cover {
   /* margin-top: px; */
   /* d-md-none */
 }
-html main .cover .tex {
+html body main .cover .tex {
   position: absolute;
   left: 0%;
   bottom: 0%;
@@ -129,37 +147,40 @@ html main .cover .tex {
   font-weight: bold;
   font-family: 'Times New Roman',serif;
 }
-html .top {
+html body .top {
   margin: 3.0rem 0rem;
 }
-html .top .container .row img {
+html body .top .container .row {
+  display: flex;
+  align-items: center;
+}
+html body .top .container .row img {
   border-radius: 50%;
-  margin-bottom: 6.0rem;
   width: 100%;
 }
-html .top .container .row .cap .tex_1 {
+html body .top .container .row .cap .tex_1 {
   font-weight: bold;
   font-size: 3.6rem;
 }
-html .top .container .row .cap .tex_2 {
+html body .top .container .row .cap .tex_2 {
   font-weight: bold;
   font-size: 1.8rem;
 }
-html .top .container .row .cap .tex_3 {
+html body .top .container .row .cap .tex_3 {
   font-weight: bold;
   font-size: 1.8rem;
 }
-html .middle {
+html body .middle {
   margin: 10.0rem 0rem;
 }
-html .middle .row .B_1 {
+html body .middle .row .B_1 {
   /* display: inline-block; */
   position: relative;
   font-size: 4.0rem;
   font-weight: bold;
   margin-bottom: 5.0rem;
 }
-html .middle .row .B_1:before {
+html body .middle .row .B_1:before {
   content: '';
   position: absolute;
   left: 0%;
@@ -173,27 +194,31 @@ html .middle .row .B_1:before {
   background-color: #666666;
   /*下線の色*/
 }
-html .middle .row .box {
+html body .middle .row .box {
   border-radius: 0.4rem;
   box-shadow: 0rem 0rem 1rem #d9d9d9;
   height: 100%;
   margin: 1.0rem;
   padding: 2.0rem;
 }
-html .middle .row .box i {
+html body .middle .row .box i {
   font-size: 5.0rem;
 }
-html .middle .row .box h6 {
+html body .middle .row .box p {
+  font-weight: bold;
+}
+html body .middle .row .box h6 {
+  font-size: 1.5rem;
   color: #6c757d;
 }
-html .bottom .B_1 {
+html body .bottom .B_1 {
   position: relative;
   font-size: 4.0rem;
   font-weight: bold;
   text-align: left;
   margin-bottom: 5.0rem;
 }
-html .bottom .B_1:before {
+html body .bottom .B_1:before {
   content: '';
   position: absolute;
   left: 0%;
@@ -207,18 +232,19 @@ html .bottom .B_1:before {
   background-color: #666666;
   /*下線の色*/
 }
-html .bottom .row .col-12 {
+html body .bottom .row .col-12 {
+  max-width: 200rem;
   margin-bottom: 3.0rem;
 }
-html .bottom .row .col-12 .sample2 {
+html body .bottom .row .col-12 .sample2 {
   width: 60%;
-  height: 40%;
-  /* overflow:		hidden; */
+  max-width: 50rem;
+  height: 100%;
   margin: auto;
   position: relative;
   text-align: center;
 }
-html .bottom .row .col-12 .sample2 img {
+html body .bottom .row .col-12 .sample2 img {
   /* max-width:600px; */
   /* max-height:400px; */
   object-fit: cover;
@@ -227,7 +253,7 @@ html .bottom .row .col-12 .sample2 img {
   border-width: 0.4rem;
   width: 100%;
 }
-html .bottom .row .col-12 .sample2 .mask {
+html body .bottom .row .col-12 .sample2 .mask {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -239,27 +265,16 @@ html .bottom .row .col-12 .sample2 .mask {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
-html .bottom .row .col-12 .sample2 .mask:hover {
+html body .bottom .row .col-12 .sample2 .mask:hover {
   opacity: 1;
   /* マスクを表示する */
-  padding-top: 8.0rem;
+  padding-top: 25%;
   /* ホバーで下にずらす */
 }
-html .bottom .row .col-12 .sample2 .mask .caption {
+html body .bottom .row .col-12 .sample2 .mask .caption {
   font-size: 130%;
   text-align: center;
   color: #fff;
-}
-html .bottom .row .col-12 footer {
-  text-align: center;
-  margin: 0rem 4.0rem;
-}
-html .bottom .row .col-12 footer .border {
-  border-top: solid 0.5px #484848;
-}
-html .bottom .row .col-12 footer .tex_1 {
-  display: flex;
-  align-items: center;
 }
 
 /* @media screen and (min-width:1000px) {
