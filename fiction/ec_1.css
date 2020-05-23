@@ -1,0 +1,173 @@
+.ul_open_h{
+    background: gray;
+    color: #fff;
+    margin: 0;
+    padding-top: 40px;
+    list-style: none;
+    top: 0;
+    z-index: 9999;
+}
+
+
+.ul_open_h{
+    height: 100%;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 9999;
+}
+
+.ul_open_h li{
+    padding: 10px;
+    width: 150px;
+    z-index: 9999;
+}
+/*
+.ul_open_v{
+    position: absolute;
+    height: 100%;
+}
+
+.ul_open_v li{
+    padding: 10px;
+    width: 150px;
+} */
+.open-2{
+    left : -100%;
+    z-index: 9999;
+}
+.open-2.active{
+    left : 0px;
+    z-index: 9999;
+}
+
+.move-2.on.btn{
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    z-index: 9999;
+}
+
+.ranking.card-title{
+  font-size: 10px;
+}
+/* slick */
+.center { margin: 0 0 50px;}
+.center img { width: 100%; height: auto;}
+.center .slick-next { right: 20px; z-index: 99;}
+.center .slick-prev { left: 15px; z-index: 100;}
+
+
+
+
+
+/* star\2 */
+
+.star-rating {
+  position: relative;
+  display:inline-block;
+  font-size: 25px;
+}
+.star-rating .star-rating-item{
+  position:absolute;
+  height:80%;
+  overflow: hidden;
+}
+.star-rating .star-rating-item:before{
+  content:"★★★★★";
+  color: #ffcc33;
+  width:125px;
+}
+.star-rating:after {
+  content:"★★★★★";
+  color: #ccc;
+}
+
+
+/* star-js */
+/* .star-rating-js{
+  position: relative;
+  display:inline-block;
+  font-size: 25px;
+}
+.star-rating-js .rating-front{
+  position:absolute;
+  overflow: hidden;
+  color: #ffcc33;
+}
+.star-rating-js .rating-back{
+  color: #ccc;
+} */
+
+
+/*menu  */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  height: 50px;
+  background-color: #111;
+}
+
+nav {
+  width: 100%;
+  z-index: 0;
+}
+nav > ul > li {
+  width: 100%;
+}
+nav > ul > li > a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+nav > ul > li:first-child > a{border-top: 1px solid #ccc;}
+nav > ul > li > ul {
+  display: none;
+}
+nav > ul > li li > a {
+  display: block;
+  width: 100%;
+  padding: 10px 5%;
+  border-bottom: 1px solid #ccc;
+  background-color: #111;
+  color: #fff;
+}
+
+@media screen and (min-width: 700px) {
+  nav{margin-top: 50px;}
+  nav > ul {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+    width: calc(100% / 5);
+    font-size: 1rem;
+    vertical-align: top;
+  }
+  nav > ul > li > a {
+    border: none;
+    border-left: 1px solid #ccc;
+  }
+  nav > ul > li:first-child > a {
+    border-top: none;
+    border-left: none;
+  }
+}

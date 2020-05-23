@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<head>
+  <html lang="ja">
+  <title>Hello, world!</title>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="ec_1.css">
+  <!-- フォント -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="css_ec/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css_ec/slick.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <!-- slick -->
+    <div class="" style="display: flex; justify-content: space-between; align-items:center;">
+      <ul class="ul_open_h open-2">
+        <li>カテゴリから選ぶ</li>
+        <ul>
+          <li><a href="#"style="color:white;">
+            シティサイクル</a>
+          </li>
+          <li><a href="#"style="color:white;">
+            電動アシスト自転車</a>
+          </li>
+          <li><a href="#"style="color:white;">
+            子供用サイクル</a>
+          </li>
+          <li><a href="#"style="color:white;">
+            折り畳み・小径・BMX</a>
+          </li>
+          <li><a href="#"style="color:white;">
+            スポーツサイクル</a>
+          </li>
+          <li><a href="#"style="color:white;">
+            その他</a>
+          </li>
+        </ul>
+        <li>用途別から選ぶ</li>
+        <ul>
+          <li><a href="#"style="color:white;">
+            通勤に最適</a>
+          </li>
+          <li><a href="#"style="color:white;">
+            通学に最適</a>
+          </li>
+          <li><a href="#"style="color:white;">
+            子供用送り迎え</a>
+          </li>
+          <li><a href="#"style="color:white;">
+            お買い物に最適</a>
+          </li>
+        </ul>
+        <li><a href="#"style="color:white;">
+          ランキング</a>
+        </li>
+        <li><a href="#"style="color:white;">
+          口コミ</a>
+        </li>
+      </ul>
+      <span class="btn btn-2">
+        <i class="fas fa-align-justify"></i>
+      </span>
+      <!-- <span class="btn btn-1">XXXXX</span> -->
+      <!-- side-slider -->
+      <script type="text/javascript">
+      $('.btn-2').click(function () {
+        $('.open-2').toggleClass('active');
+        $(this).toggleClass('on');
+        $(this).toggleClass('move-2');
+      });
+      </script>
+      <div class="" style="text-align:center;">
+        <i class="fas fa-bicycle"style="font-size:50px;"></i>
+      </div>
+      <div class=""style="margin-right:10px;">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </div>
+
+  </header>
+  <main>
+
+
+    <!-- menu -->
+    <section>
+    	<nav>
+    		<ul>
+    			<li><a href="">カテゴリから選ぶ</a>
+    				<ul>
+    					<li><a href="">list01</a></li>
+    					<li><a href="">list02</a></li>
+    					<li><a href="">list03</a></li>
+    				</ul>
+    			</li>
+    			<li><a href="">用途から選ぶ</a>
+    				<ul>
+    					<li><a href="">list01</a></li>
+    					<li><a href="">list02</a></li>
+    					<li><a href="">list03</a></li>
+    				</ul>
+    			</li>
+    			<li><a href="">ランキング</a>
+    				<ul>
+    					<li><a href="">list01</a></li>
+    					<li><a href="">list02</a></li>
+    					<li><a href="">list03</a></li>
+    				</ul>
+    			</li>
+    			<li><a href="">口コミ</a>
+    				<ul>
+    					<li><a href="">list01</a></li>
+    					<li><a href="">list02</a></li>
+    					<li><a href="">list03</a></li>
+    				</ul>
+    			</li>
+    			<li><a href="">その他</a>
+    				<ul>
+    					<li><a href="">list01</a></li>
+    					<li><a href="">list02</a></li>
+    					<li><a href="">list03</a></li>
+    				</ul>
+    			</li>
+    		</ul>
+    	</nav>
+    </section>
+
+
+<!-- menu -->
+<script>
+$('nav').prepend('<div class="toggle">menu</div>');
+$('.toggle').css({
+	'width':'100%',
+	'height':'50px',
+	'background-color':'#999',
+	'color':'#fff',
+	'text-align':'center',
+	'line-height':'50px'
+});
+$(window).on('load resize',function(){
+	var winWidth = $(window).width();
+	if(winWidth < 700){
+		$('.toggle').show();
+		$('nav>ul').hide();
+	} else{
+		$('.toggle').hide();
+		$('nav>ul').show();
+	}
+});
+$('.toggle').on('click',function(){
+	$(this).next('ul').slideToggle();
+	$('.open').removeClass('open');
+	$('nav>ul>li>a').next('ul').slideUp();
+	operner =close;
+});
+
+
+var opener = close;//flagでクリックしたときのアコーディオンの開くまでの時間を調節
+//ウィンドウサイズ640px以下の時の動作
+$('nav>ul>li>a').on('click',function(){
+	var winWidth = $(window).width();
+	if(winWidth < 700){//ウィンドウサイズ640px以上なら
+		if($(this).hasClass('open')){//クリックした要素がopenクラスを持っているなら
+			$(this).removeClass('open');
+			$(this).next('ul').slideUp();
+			opener = close;
+		} else{//クリックした要素がopenクラスを持っていないなら
+			var timer;//アコーディオンが開くまでの遅延時間
+			console.log(opener);
+			if(opener !== close){
+				timer = 500;
+			}else{
+				timer = 0;
+			}
+			$('.open').removeClass('open');
+			$('nav>ul>li>a').next('ul').slideUp();
+			setTimeout(()=>{
+				$(this).addClass('open');
+				$(this).next('ul').slideDown();
+			},timer);
+			opener = open;
+		}
+		event.preventDefault();
+	}else{//ウィンドウサイズ640px以下なら
+		return false;
+	}
+});
+
+//ウィンドウサイズ640px以上の時の動作
+$('nav>ul>li').on('mouseover',function(){//マウスをのせたとき
+	var winWidth = $(window).width();
+	if(winWidth > 700){//ウィンドウサイズ640px以上なら
+		if(!$(this).children('a').hasClass('open')){
+			$(this).children('a').addClass('open');
+			$(this).children('ul').stop().slideDown();
+		}
+	}else{//ウィンドウサイズ640px以下なら
+		return false;
+	}
+}).on('mouseout',function(){
+	var winWidth = $(window).width();
+	if(winWidth > 700){//ウィンドウサイズ640px以上なら
+		$(this).children('a').removeClass('open');
+		$(this).children('ul').stop().slideUp();
+	}else{//ウィンドウサイズ640px以下なら
+		return false;
+	}
+});
+$('nav>ul>li>a').on('click',function(){
+	event.preventDefault();
+});
+</script>
+
+
+
+
+
+
+
+
+    <div class="sale" >
+
+      <a href="#">
+        <img src="./img_ec/sale.png" alt="" style="width:100%; object-fit:contain;">
+      </a>
+    </div>
+    <div class="carousel">
+      <div class="center">
+        <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/1.jpg" alt=""></div>
+        <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/2.jpg" alt=""></div>
+        <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/3.jpg" alt=""></div>
+        <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/4.jpg" alt=""></div>
+        <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/5.jpg" alt=""></div>
+        <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/6.jpg" alt=""></div>
+        <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/7.jpg" alt=""></div>
+        <div><img src="https://www.jungleocean.com/demo/jquery-slick/images/8.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div class="ranking"style="margin-top:40px;">
+      <div class=""style="margin-bottom:20px;text-align:center;font-weight:bold;">
+        ランキング
+      </div>
+      <div class="container">
+
+        <div class="row" style="">
+          <div class="col-6 col-md-3"style="margin-bottom:10px;">
+            <div class="card img-thumbnail">
+              <div class=""style="text-align:center; color:rgb(204, 185, 48);">
+                1位
+              </div>
+              <img class="card-img-top" src="./img_ec/rank_1.jpg" alt="画像">
+              <div class="card-body px-2 py-3">
+                <div class="card-title"style="font-size:10px;"> ３人乗り用チャイルドシート付き bikke mob dd
+                </div>
+                <p class="card-text">¥145,000</p>
+                <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">詳しく</a>
+                </p>
+                <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+              </div><!-- /.card-body -->
+            </div><!-- /.card -->
+          </div><!-- /.col-sm-6.col-md-3 -->
+          <div class="col-6 col-md-3"style="margin-bottom:10px;">
+            <div class="card img-thumbnail">
+              <div class=""style="text-align:center; color:rgb(161, 161, 161);">
+                2位
+              </div>
+
+              <img class="card-img-top" src="./img_ec/rank_1.jpg" alt="画像">
+              <div class="card-body px-2 py-3">
+                <div class="card-title" style="font-size:10px;">  ３人乗り用チャイルドシート付き bikke mob dd
+                </div>
+                <p class="card-text">¥145,000</p>
+                <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">詳しく</a>
+                </p>
+                <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+              </div><!-- /.card-body -->
+            </div><!-- /.card -->
+          </div><!-- /.col-sm-6.col-md-3 -->
+          <div class="col-6 col-md-3"style="margin-bottom:10px;">
+            <div class="card img-thumbnail">
+              <div class=""style="text-align:center; color:rgb(230, 154, 0);">
+                3位
+              </div>
+              <img class="card-img-top" src="./img_ec/rank_1.jpg" alt="画像">
+              <div class="card-body px-2 py-3">
+                <h5 class="card-title" style="font-size:10px;">  ３人乗り用チャイルドシート付き bikke mob dd
+                </h5>
+                <p class="card-text">¥145,000</p>
+                <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">詳しく</a>
+                </p>
+                <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+              </div><!-- /.card-body -->
+            </div><!-- /.card -->
+          </div><!-- /.col-sm-6.col-md-3 -->
+          <div class="col-6 col-md-3"style="margin-bottom:10px;">
+            <div class="card img-thumbnail">
+              <div class=""style="text-align:center; color:rgb(0, 0, 0);">
+                4位
+              </div>
+              <img class="card-img-top" src="./img_ec/rank_1.jpg" alt="画像">
+              <div class="card-body px-2 py-3">
+                <h5 class="card-title" style="font-size:10px;">  ３人乗り用チャイルドシート付き bikke mob dd
+                </h5>
+                <p class="card-text">¥145,000</p>
+                <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">詳しく</a>
+                </p>
+                <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+              </div><!-- /.card-body -->
+            </div><!-- /.card -->
+          </div><!-- /.col-sm-6.col-md-3 -->
+
+        </div><!-- /.row -->
+      </div><!-- /.row -->
+      <div class="features"style="margin-top:40px; padding-bottom:20px;background-color:rgb(245, 245, 245);">
+        <div class=""style="margin:20px; padding-top:20px;text-align:center;font-weight:bold;">
+          自転車特集
+        </div>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <a href="#">
+
+                <div class="box" style="margin:5px;">
+                  <div class="card img-thumbnail"style="box-shadow: 0px 0px 10px rgb(217, 217, 217);border:none !important; border-radius:0 !important;">
+                    <div class=""style="text-align:center; color:rgb(204, 185, 48);">
+                    </div>
+                    <img class="card-img-top" src="./img_ec/shopping.jpg" alt="画像">
+                    <div class="card-body px-2 py-3">
+                      <div class="card-title"style="font-size:10px;"> ３人乗り用チャイルドシート付き bikke mob dd
+                      </div>
+                      <p class="card-text">¥145,000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+            </div><!-- /.card-body -->
+            <div class="col-6 col-md-6">
+              <a href="#">
+
+                <div class="box" style="margin:5px">
+                  <div class="card img-thumbnail"style="box-shadow: 0px 0px 10px rgb(217, 217, 217);border:none !important; border-radius:0 !important;">
+                    <div class=""style="text-align:center; color:rgb(204, 185, 48);">
+                    </div>
+                    <img class="card-img-top" src="./img_ec/shopping.jpg" alt="画像">
+                    <div class="card-body px-2 py-3">
+                      <div class="card-title"style="font-size:10px;"> ３人乗り用チャイルドシート付き bikke mob dd
+                      </div>
+                      <p class="card-text">¥145,000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+            </div><!-- /.card-body -->
+            <div class="col-6 col-md-3">
+              <a href="#">
+
+                <div class="box" style="margin:5px;">
+                  <div class="card img-thumbnail"style="box-shadow: 0px 0px 10px rgb(217, 217, 217);border:none !important; border-radius:0 !important;">
+                    <div class=""style="text-align:center; color:rgb(204, 185, 48);">
+                    </div>
+                    <img class="card-img-top" src="./img_ec/shopping.jpg" alt="画像">
+                    <div class="card-body px-2 py-3">
+                      <div class="card-title"style="font-size:10px;"> ３人乗り用チャイルドシート付き bikke mob dd
+                      </div>
+                      <p class="card-text">¥145,000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+            </div><!-- /.card-body -->
+            <div class="col-6 col-md-3">
+              <a href="#">
+
+                <div class="box" style="margin:5px;">
+                  <div class="card img-thumbnail"style="box-shadow: 0px 0px 10px rgb(217, 217, 217);border:none !important; border-radius:0 !important;">
+                    <div class=""style="text-align:center; color:rgb(204, 185, 48);">
+                    </div>
+                    <img class="card-img-top" src="./img_ec/shopping.jpg" alt="画像">
+                    <div class="card-body px-2 py-3">
+                      <div class="card-title"style="font-size:10px;"> ３人乗り用チャイルドシート付き bikke mob dd
+                      </div>
+                      <p class="card-text">¥145,000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+            </div><!-- /.card-body -->
+            <div class="col-6 col-md-3">
+              <a href="#">
+
+                <div class="box" style="margin:5px;">
+                  <div class="card img-thumbnail"style="box-shadow: 0px 0px 10px rgb(217, 217, 217);border:none !important; border-radius:0 !important;">
+                    <div class=""style="text-align:center; color:rgb(204, 185, 48);">
+                    </div>
+                    <img class="card-img-top" src="./img_ec/shopping.jpg" alt="画像">
+                    <div class="card-body px-2 py-3">
+                      <div class="card-title"style="font-size:10px;"> ３人乗り用チャイルドシート付き bikke mob dd
+                      </div>
+                      <p class="card-text">¥145,000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+            </div><!-- /.card-body -->
+            <div class="col-6 col-md-3 d-none d-sm-block">
+              <a href="#">
+
+                <div class="box" style="margin:5px;">
+                  <div class="card img-thumbnail"style="box-shadow: 0px 0px 10px rgb(217, 217, 217);border:none !important; border-radius:0 !important;">
+                    <div class=""style="text-align:center; color:rgb(204, 185, 48);">
+                    </div>
+                    <img class="card-img-top" src="./img_ec/shopping.jpg" alt="画像">
+                    <div class="card-body px-2 py-3">
+                      <div class="card-title"style="font-size:10px;"> ３人乗り用チャイルドシート付き bikke mob dd
+                      </div>
+                      <p class="card-text">¥145,000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <a href="#" class="btn btn-secondary btn-sm">ボタン</a></p> -->
+
+            </div><!-- /.card-body -->
+          </div><!-- /.card -->
+        </div><!-- /.card -->
+      </div><!-- /.col-sm-6.col-md-3 -->
+
+      <!-- <div class="star-ratings-css">
+        <div class="star-ratings-css-top" style="width: 55%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      </div>
+
+      <div class="star-rating-js" data-rating-value="7" data-rating-max="5"></div>
+
+      <div class="star-rating">
+        <div class="star-rating-item" style="width:25%;"></div>
+      </div>
+       -->
+      <div class="kuchikomi">
+
+        <div class="container-fluid"style="margin-top:40px;margin-bottom:40px;">
+          <div class=""style="margin:20px; padding-top:20px;text-align:center;font-weight:bold;">
+            口コミ
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-3" style="border-left:none;border-right:none">
+                <div class="row no-gutters">
+                  <div class="col-4 col-md-12">
+                    <img src="img_ec/elec.jpg" class="card-img" style="width: 100%; height:100%; object-fit: cover; " alt="...">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body py-1">
+                      <!-- star -->
+                      <div class="star-rating">
+                        <div class="star-rating-item" style="width:25%; overflow:hidden;"></div>
+                      </div>
+                      <p class="card-title font-weight-bold"> 年配にやさしい自転車</p>
+                      <p class="card-text" style="font-size:10px;">初めての電動自転車です．重量が重いことと色の選択が少なかったこと以外は大満足です．初めての電動自転車です．重量が重いことと色の選択が少なかったこと以外は大満足です．初めての電動自転車です．重量が重いことと色の選択が少なかったこと以外は大満足です．</p>
+                      <!-- <p class="card-text"><small class="text-muted">最終更新3分前</small></p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3" style="border-left:none;border-right:none">
+                <div class="row no-gutters">
+                  <div class="col-4 col-md-12">
+                    <img src="img_ec/elec.jpg" class="card-img" style="width: 100%; height:100%; object-fit: cover; " alt="...">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body py-1">
+                      <div class="star-rating">
+                        <div class="star-rating-item" style="width:50%; overflow:hidden;"></div>
+                      </div>
+                      <p class="card-title font-weight-bold"> 年配にやさしい自転車</p>
+                      <p class="card-text" style="font-size:10px;">初めての電動自転車です．重量が重いことと色の選択が少なかったこと以外は大満足です．初めての電動自転車です．重量が重いことと色の選択が少なかったこと以外は大満足です．初めての電動自転車です．重量が重いことと色の選択が少なかったこと以外は大満足です．</p>
+                      <!-- <p class="card-text"><small class="text-muted">最終更新3分前</small></p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3" style="border-left:none;border-right:none">
+                <div class="row no-gutters">
+                  <div class="col-4 col-md-12">
+                    <img src="img_ec/elec.jpg" class="card-img" style="width: 100%; height:100%; object-fit: cover; " alt="...">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body py-1">
+                      <p class="card-title font-weight-bold"> 年配にやさしい自転車</p>
+                      <p class="card-text" style="font-size:10px;">初めての電動自転車です．重量が重いことと色の選択が少なかったこと以外は大満足です．初めての電動自転車です．重量が重いことと色の選択が少なかったこと以外は大満足です．初めての電動自転車です．重量が重いことと色の選択が少なかったこと以外は大満足です．</p>
+                      <!-- <p class="card-text"><small class="text-muted">最終更新3分前</small></p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  <div class="news"style="margin-top:40px;margin-bottom:20px;">
+        <div class=""style="margin-bottom:20px;text-align:center;font-weight:bold;">
+          お知らせ
+        </div>
+        <div class=""style="display:flex;">
+          <span class="time"style="margin-left:10px;">
+            2020/1/29
+          </span>
+          <span class="detail" style="margin-left:30px;">
+            お客様窓口の営業時間変更について
+          </span>
+        </div>
+        <div class=""style="display:flex;">
+          <span class="time"style="margin-left:10px;">
+            2020/1/29
+          </span>
+          <span class="detail" style="margin-left:30px;">
+            お客様窓口の営業時間変更について
+          </span>
+        </div>
+        <div class=""style="display:flex;">
+          <span class="time"style="margin-left:10px;">
+            2020/1/29
+          </span>
+          <span class="detail" style="margin-left:30px;">
+            お客様窓口の営業時間変更について
+          </span>
+        </div>
+
+      </div>
+
+
+      <footer class="text-center text-muted"style="margin-left:40px; margin-right:40px;">
+        <!-- sm以上で表示 -->
+        <div class="container d-none d-sm-block"style="margin-top:50px;">
+          <div class="row" >
+            <div class="col-3" style=" font-weight: bold;  font-size: 13px;">
+              <div class="pb-3" style="color:rgb(72, 72, 72);">
+                M's Cycle
+              </div>
+              <ul style="list-style: none; padding-left:0px;">
+                <li><a href="#" style="color: #767676";>M's Cycleについて</a></li>
+                <li><a href="#"style="color: #767676">M's Cycleとは</a></li>
+                <li><a href="#"style="color: #767676">完成車でのお届け</a></li>
+                <li><a href="#"style="color: #767676">運営会社</a></li>
+                <li><a href="#"style="color: #767676">採用情報</a></li>
+              </ul>
+            </div>
+            <div class="col-3" style=" font-weight: bold;  font-size: 13px;">
+              <div class="pb-3" style="color:rgb(72, 72, 72);">
+                お買い物ガイド
+              </div>
+              <ul style="list-style: none; padding-left:0px;">
+                <li><a href="#" style="color: #767676">ご注文までの流れ</a></li>
+                <li><a href="#"style="color: #767676">送料と出荷について</a></li>
+                <li><a href="#"style="color: #767676">お支払方法について</a></li>
+                <li><a href="#"style="color: #767676">パーツの購入について</a></li>
+                <li><a href="#"style="color: #767676">配送状況の確認について</a></li>
+              </ul>
+            </div>
+            <div class="col-3" style=" font-weight: bold;  font-size: 13px;">
+              <div class="pb-3" style="color:rgb(72, 72, 72);">
+                取り扱い商品
+              </div>
+              <ul style="list-style: none; padding-left:0px;">
+                <li><a href="#" style="color: #767676";>シティサイクル</a></li>
+                <li><a href="#"style="color: #767676">折り畳み自転車</a></li>
+                <li><a href="#"style="color: #767676">ミニベロ</a></li>
+                <li><a href="#"style="color: #767676">スポーツバイク</a></li>
+                <li><a href="#"style="color: #767676">パーツ</a></li>
+              </ul>
+            </div>
+            <div class="col-3" style=" font-weight: bold;  font-size: 13px;">
+              <div class="pb-3" style="color:rgb(72, 72, 72);">
+                サポート
+
+
+              </div>
+              <ul style="list-style: none; padding-left:0px;">
+                <li><a href="#" style="color: #767676";>ヘルプ</a></li>
+                <li><a href="#"style="color: #767676">エリアサポート</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="footer_1"> -->
+        <div class=""style= "border-top : solid 0.5px rgb(72,72,72);margin-top:40px;" >
+          <div class=""style="display:flex; align-items:center;">
+
+            <p class="">
+              © 2020 M's Cycle, Inc. All rights reserved.
+              <span>
+                <a href="#" style="color: #767676">
+                  利用規約
+                </a>
+              </span>
+              <span><a href="#" style="color: #767676">
+                プライバシー
+              </a>
+            </span>
+            <span><a href="#" style="color: #767676">
+              サイトマップ
+            </a>
+          </span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(function(){
+    $('.js-modal-open').on('click',function(){
+      $('.js-modal').fadeIn();
+      return false;
+    });
+    $('.js-modal-close').on('click',function(){
+      $('.js-modal').fadeOut();
+      return false;
+    });
+  });
+</script>
+
+<script type="text/javascript">
+$(window).on('resize', function(){
+  if($(window).width() <= 420){
+    $("#top").css({"background-image":"url(img/logo.png)"});
+  }else if($(window).width() <= 1024){
+    $("#top").css({"background-image":"url(img/plan.jpg)"});
+  }else{
+    $("#top").css({"background":"none"});
+  }
+});
+</script>
+
+
+<!-- slick -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="css_ec/slick.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.center').slick({
+    infinite: true, //スライドのループ有効化
+    dots:true, //ドットのナビゲーションを表示
+    centerMode: true, //要素を中央寄せ
+    centerPadding:'10%', //両サイドの見えている部分のサイズ
+    autoplay:true, //自動再生
+  });
+});
+</script>
+
+
+<!-- star -->
+<script type="text/javascript">
+$(".star-rating-js").each(function(i, e){
+  var el = $(e);
+  var rateMark = el.data("rating-mark") ? el.data("rating-mark") : "★";
+  var rateStr = Array(el.data("rating-max")+1).join(rateMark);
+  el.append($("<div>").addClass("rating-front").html(rateStr).css("width", el.data("rating-value") + "%"));
+  el.append($("<div>").addClass("rating-back").html(rateStr));
+});
+</script>
+<!--
+// var _gaq = _gaq || [];
+// _gaq.push(['_setAccount', 'UA-36251023-1']);
+// _gaq.push(['_setDomainName', 'jqueryscript.net']);
+// _gaq.push(['_trackPageview']);
+//
+// (function() {
+//   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+// })();
+
+-->
+
+</body>
+</html>
