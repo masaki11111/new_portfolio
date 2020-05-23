@@ -1,0 +1,351 @@
+@charset "UTF-8";
+.font-std {
+  text-align: center;
+  font-weight: bold;
+}
+
+.border {
+  border-bottom: 1.0rem solid black !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (min-width: 54rem) {
+  html {
+    font-size: 78.125%;
+  }
+}
+html body {
+  font-size: 1.5em;
+}
+html body header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 6.0rem;
+  padding: 0rem 2.0rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #e4e4e4;
+}
+html body header .flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+html body header .flex .menu-trigger {
+  display: inline-block;
+  position: relative;
+  width: 3.6rem;
+  height: 2.8rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+html body header .flex .menu-trigger span {
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.4rem;
+  background-color: #fff;
+  transition: all .5s 0s;
+}
+html body header .flex .menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+html body header .flex .menu-trigger span:nth-of-type(2) {
+  top: 1.2rem;
+}
+html body header .flex .menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+html body header .flex .menu-trigger .active {
+  background-color: red;
+}
+html body header .flex .menu-trigger .active span:nth-of-type(1) {
+  transform: translateY(12px) rotate(-45deg);
+}
+html body header .flex .menu-trigger .active span:nth-of-type(2) {
+  opacity: 0;
+}
+html body header .flex .menu-trigger .active span:nth-of-type(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+html body header .flex .icon {
+  font-weight: bold;
+  margin-left: auto;
+  font-family: Times New Roman;
+  color: white;
+}
+html body main .pagetop {
+  position: relative;
+}
+html body main .pagetop .icon {
+  position: fixed;
+  background-color: #ececec;
+  width: 4.0rem;
+  height: 4.0rem;
+  line-height: 2.0;
+  text-align: center;
+  bottom: 2.0rem;
+  right: 1.0rem;
+  z-index: 9999;
+}
+html body main .bk {
+  width: 100%;
+  height: 6.0rem;
+}
+html body main nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  display: none;
+  position: fixed;
+  top: 6.0rem;
+  left: 0;
+  z-index: 1;
+}
+html body main nav ul {
+  padding: 2.0rem 0;
+}
+html body main nav ul li:nth-of-type(1) {
+  display: inline-block;
+  box-sizing: border-box;
+  border-bottom: 2px solid red;
+  color: #fff;
+}
+html body main nav ul li a {
+  text-decoration: none !important;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+html body main nav ul li a:hover {
+  transition: all .5s 0s;
+  color: red;
+}
+html body main .cover {
+  background: url("../img/header_3_2.jpg");
+  background-size: cover;
+  position: relative;
+  height: 30rem;
+  /* background-size:cover; */
+  /* margin-top: px; */
+  /* d-md-none */
+}
+html body main .cover .tex {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: 'Times New Roman',serif;
+}
+html body main .top {
+  margin: 3.0rem 0rem;
+}
+html body main .top a {
+  text-decoration: none;
+}
+html body main .top .container .row {
+  display: flex;
+  align-items: center;
+}
+html body main .top .container .row img {
+  border-radius: 50%;
+  width: 100%;
+}
+html body main .top .container .row .cap .tex_1 {
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+html body main .top .container .row .cap .tex_2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+html body main .top .container .row .cap .tex_3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+html body main .middle {
+  margin: 10.0rem 0rem;
+}
+html body main .middle .row .B_1 {
+  /* display: inline-block; */
+  position: relative;
+  font-size: 4.0rem;
+  font-weight: bold;
+  margin-bottom: 5.0rem;
+}
+html body main .middle .row .B_1:before {
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: -0.15rem;
+  /*下線の上下位置調整*/
+  display: inline-block;
+  width: 5.0rem;
+  /*下線の幅*/
+  height: 0.2rem;
+  /*下線の太さ*/
+  background-color: #666666;
+  /*下線の色*/
+}
+html body main .middle .row .box {
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0rem 1rem #d9d9d9;
+  height: 100%;
+  margin: 1.0rem;
+  padding: 2.0rem;
+}
+html body main .middle .row .box i {
+  font-size: 5.0rem;
+}
+html body main .middle .row .box p {
+  font-weight: bold;
+}
+html body main .middle .row .box h6 {
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+html body main .bottom {
+  margin-top: 15.5rem;
+}
+html body main .bottom .B_1 {
+  position: relative;
+  font-size: 4.0rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5.0rem;
+}
+html body main .bottom .B_1:before {
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: -1.5rem;
+  /*下線の上下位置調整*/
+  display: inline-block;
+  width: 5.0rem;
+  /*下線の幅*/
+  height: 0.2rem;
+  /*下線の太さ*/
+  background-color: #666666;
+  /*下線の色*/
+}
+html body main .bottom .row {
+  margin: 0.0rem;
+}
+html body main .bottom .row .col-12 {
+  max-width: 200rem;
+  margin-bottom: 3.0rem;
+}
+html body main .bottom .row .col-12 .sample2 {
+  width: 60%;
+  max-width: 50rem;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+html body main .bottom .row .col-12 .sample2 img {
+  /* max-width:600px; */
+  /* max-height:400px; */
+  object-fit: cover;
+  border-radius: 0.1rem;
+  padding: 0.4rem;
+  border-width: 0.4rem;
+  width: 100%;
+}
+html body main .bottom .row .col-12 .sample2 .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* マスクを表示しない */
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+html body main .bottom .row .col-12 .sample2 .mask:hover {
+  opacity: 1;
+  /* マスクを表示する */
+  padding-top: 25%;
+  /* ホバーで下にずらす */
+}
+html body main .bottom .row .col-12 .sample2 .mask .caption {
+  font-size: 130%;
+  text-align: center;
+  color: #fff;
+}
+html body footer .top_line {
+  border-top: solid 0.5px #484848;
+}
+html body footer .top_line .link {
+  display: flex;
+  justify-content: center;
+}
+html body footer .top_line .link .twitter {
+  border-radius: 10%;
+  background-color: #52c5fe;
+  color: white;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+}
+html body footer .top_line .link .twitter .fa-twitter {
+  color: white;
+}
+html body footer .top_line .link .facebook {
+  border-radius: 10%;
+  background-color: #4360e0;
+  color: white;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+  font-size: 1.2rem;
+}
+html body footer .top_line .link .facebook .fa-heart {
+  color: white;
+}
+html body footer .top_line .link .share {
+  border-radius: 10%;
+  background-color: #4360e0;
+  color: white;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+  font-size: 1.2rem;
+}
+
+/* @media screen and (min-width:1000px) {
+.cover { background:url("img/header.jpg") ;
+background-size:cover;
+height: 250px;}
+} */
+/* .navbar-toggler {
+background: url("img/logo.png")
+no-repeat left center;
+background-size: contain;
+height: 50px;
+width: 100px;
+} */
+/* .A_1 > .container{
+max-width:100% !important;
+
+margin-bottom:40px;
+}
+.A_2  > .container{
+width: 100% !important;;
+margin-bottom:40px;
+} */
+/* small */
+
+/*# sourceMappingURL=_main.css.map */
