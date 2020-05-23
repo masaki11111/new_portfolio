@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAmCA,SAAS;EACP,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;;;AAGnB,OAAO;EACL,aAAa,EAAC,6BAA6B;;;AAG7C,IAAI;EAEF,SAAS,EAAE,KAAK;;AAvBhB,yBAA0B;EAqB5B,IAAI;IAIA,SAAS,EAAE,OAAO;;;AAIpB,SAAI;EACF,SAAS,EAAE,KAAK",
+"sources": ["scraping.scss"],
+"names": [],
+"file": "scraping.css"
+}

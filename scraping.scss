@@ -1,0 +1,59 @@
+
+// color
+$color-btn: #da6b64;
+$color-empha: #ebb94d;
+$color-bcg-2: #fef5e0;
+
+//
+
+$sp: .0rem; // タブレット
+$tb: 54.0rem; // タブレット
+$pc: 72.0rem; // PC
+
+@mixin sp {
+  @media (min-width: ($sp)) {
+    @content;
+  }
+}
+// @mixin sptb {
+//   @media (min-width: ($sp + 1px) and max-width:($pc - 1px)) {
+//     @content;
+//   }
+// }
+@mixin tb {
+  @media (min-width: ($tb)) {
+    @content;
+  }
+}
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+
+
+.font-std{
+  text-align: center;
+  font-weight: bold;
+}
+
+.border{
+  border-bottom:1.0rem solid black !important;
+}
+
+html{
+  // font-size: 62.5%;
+  font-size: 62.5%;
+  @include tb {
+    font-size: 78.125%;
+  }
+
+
+  body{
+    font-size: 1.5em;
+    header{
+
+    }
+  }
+}

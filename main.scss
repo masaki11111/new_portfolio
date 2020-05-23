@@ -143,26 +143,34 @@ html{
       nav {
         width: 100%;
         background-color: rgba(0, 0, 0, 0.7);
-        color: #fff;
         text-align: center;
         display: none;
         position: fixed;
         top: 6.0rem;
         left: 0;
         z-index: 1;
+        // a{
+        //   text-decoration: none !important;
+        // }
         ul {
           padding: 2.0rem 0;
           li {
+            &:nth-of-type(1) {
+              display: inline-block;
+              box-sizing: border-box;
+              border-bottom: 2px solid red;
+              color: #fff;
+            }
+            a {
+              text-decoration: none !important;
+              color: #fff;
+              // color: #fff;
             padding: 0.5rem 0;
             &:hover {
               transition: all .5s 0s;
               color: red;
             }
-            &:nth-of-type(1) {
-              display: inline-block;
-              box-sizing: border-box;
-              border-bottom: 2px solid red;
-            }
+          }
           }
         }
       }
@@ -191,6 +199,9 @@ html{
       }
 
       .top{
+        a{
+          text-decoration: none;
+        }
         margin: 3.0rem 0rem;
         .container{
           .row{
@@ -259,6 +270,7 @@ html{
       }
 
       .bottom{
+        margin-top: 15.5rem;
         .B_1{
           position: relative;
           font-size: 4.0rem;
@@ -277,6 +289,7 @@ html{
           }
         }
         .row{
+          margin: 0.0rem;
           .col-12{
             max-width: 200rem;
             margin-bottom: 3.0rem;

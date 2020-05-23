@@ -1,0 +1,934 @@
+.font-std, html body header .fix .header_style .header_3 .img, html body header .fix .header_style .header_3 .text, html body main .top .top_1 .text, html body main .top .top_2 .tex_1, html body main .top .top_2 .button .text, html body main .top .top_2 .tex, html body main .top .top_3 .tex_1, html body main .top .top_4 .tex_1, html body main .top .top_4 .tex_2, html body main .top .top_4 .tex_3 .tex_1, html body main .top .top_5 .tex_1, html body main .top .top_5 .tex_2, html body main .top .top_5 .tex_3, html body main .top .top_5 .container .elem, html body main .top .top_6, html body main .top .top_7 .tex_1, html body main .top .top_7 .tex_3, html body main .top .top_8 .tex_1, html body main .top .top_8 .box .cap_1, html body main .top .top_8 .tex_2, html body main .middle .middle_1 .title, html body main .middle .middle_1 .tex_1, html body main .middle .middle_2 .title .cap, html body main .middle .middle_2 .tex_1 .tex_1_1, html body main .middle .middle_2 .tex_1 .tex_1_2, html body main .middle .middle_3 .title_1, html body main .middle .middle_3 .container .box, html body main .middle .middle_4, html body main .middle .middle_5 .title, html body main .middle .middle_6 .title, html body main .middle .middle_7 .title, html body main .middle .middle_7 .tex_1, html body main .middle .middle_7 .box .tex_2 .tex_2_1, html body main .middle .middle_8 .title, html body main .middle .middle_8 .tex_1, html body main .middle .middle_8 .tex_2, html body main .middle .middle_8 .tex_3, html body main .bottom .bottom_1 .title, html body main .bottom .bottom_1 form .inputs input[type="submit"], html body main .bottom .bottom_2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.border {
+  border-bottom: 1.0rem solid black !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (min-width: 54rem) {
+  html {
+    font-size: 78.125%;
+  }
+}
+html body {
+  font-size: 1.5em;
+}
+html body header .fix {
+  position: fixed;
+  width: 100%;
+  height: 6.8rem;
+  top: .0rem;
+  left: .0rem;
+  background-color: white;
+  z-index: 10;
+}
+html body header .fix .header_style {
+  display: flex;
+}
+html body header .fix .header_style .header_1 {
+  margin: 1.0rem 1.0rem;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+@media (min-width: 54rem) {
+  html body header .fix .header_style .header_1 {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: flex-end;
+    margin-bottom: 2.0rem;
+  }
+}
+html body header .fix .header_style .header_1 .header_1_1 img {
+  width: 10.0rem;
+}
+html body header .fix .header_style .header_3 {
+  height: 6.8rem;
+  margin-left: auto;
+  background-color: #da6b64;
+  color: black;
+  padding: 1.0rem;
+}
+html body header .fix .header_style .header_3 .img img {
+  width: 2.0rem;
+}
+html body header .fix .header_style .header_3 .text {
+  color: white;
+}
+html body main .pagetop {
+  position: relative;
+}
+html body main .pagetop .icon {
+  position: fixed;
+  background-color: #ececec;
+  width: 4.0rem;
+  height: 4.0rem;
+  line-height: 2.0;
+  text-align: center;
+  bottom: 2.0rem;
+  right: 1.0rem;
+}
+html body main .top {
+  margin-top: 6.8rem;
+}
+html body main .top .top_1 {
+  height: 30.0rem;
+  background-size: cover;
+  background-image: url("../img/mainsp.jpg");
+}
+html body main .top .top_1 .logo {
+  text-align: center;
+}
+html body main .top .top_1 .logo img {
+  margin-top: 4.0rem;
+  width: 30.0rem;
+}
+html body main .top .top_1 .text {
+  margin-top: 7.0rem;
+}
+html body main .top .top_2 {
+  background-color: #ebb94d;
+  padding: 2.0rem 1.0rem;
+}
+html body main .top .top_2 .tex_1 {
+  color: white;
+  line-height: 2;
+}
+html body main .top .top_2 .tex_2 {
+  text-align: center;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_2 .tex_2 br {
+    display: none;
+  }
+}
+html body main .top .top_2 .button {
+  background-color: #da6b64;
+  border-radius: 5.0rem;
+  margin: 1.0rem;
+}
+html body main .top .top_2 .button .text {
+  color: white;
+  font-size: 2.0rem;
+  padding: 2.0rem;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_2 .button .text br {
+    display: none;
+  }
+}
+html body main .top .top_2 .tex {
+  margin-top: 3.0rem;
+  color: white;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_2 .tex br {
+    display: none;
+  }
+}
+html body main .top .top_2 .link {
+  display: flex;
+  justify-content: center;
+}
+html body main .top .top_2 .link .twitter {
+  border-radius: 10%;
+  background-color: #52c5fe;
+  color: white;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+}
+html body main .top .top_2 .link .twitter .fa-twitter {
+  color: white;
+}
+html body main .top .top_2 .link .facebook {
+  border-radius: 10%;
+  background-color: #4360e0;
+  color: white;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+  font-size: 1.2rem;
+}
+html body main .top .top_2 .link .facebook .fa-heart {
+  color: white;
+}
+html body main .top .top_2 .link .share {
+  border-radius: 10%;
+  background-color: #4360e0;
+  color: white;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+  font-size: 1.2rem;
+}
+html body main .top .top_3 {
+  margin: 0rem 4.0rem;
+}
+html body main .top .top_3 .tex_1 {
+  font-size: 1.5rem;
+  margin: 4.0rem auto;
+  line-height: 1.5;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_3 .tex_1 {
+    font-size: 2.0rem;
+  }
+  html body main .top .top_3 .tex_1 .sp {
+    display: none;
+  }
+}
+html body main .top .top_3 .tex_2 {
+  text-align: center;
+  margin-bottom: 3.0rem;
+  line-height: 1.5;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_3 .tex_2 {
+    font-size: 1.2rem;
+  }
+  html body main .top .top_3 .tex_2 .sp {
+    display: none;
+  }
+}
+html body main .top .top_3 .tex_3 {
+  line-height: 1.5;
+  background-image: url("../img/introbottom.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-bottom: 10.0rem;
+  width: 100%;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_3 .tex_3 {
+    font-size: 1.2rem;
+  }
+  html body main .top .top_3 .tex_3 .sp {
+    display: none;
+  }
+}
+html body main .top .top_3 .tex_3 .line {
+  display: inline-block;
+  border-bottom: 1rem solid #ebb94d;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+html body main .top .top_4 {
+  background-color: #fef5e0;
+  padding: 8.0rem 0rem 4.0rem .0rem;
+  position: relative;
+}
+html body main .top .top_4 .box {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -7%;
+}
+html body main .top .top_4 .box .logo {
+  text-align: center;
+  margin: auto;
+  width: 10.0rem;
+  height: 10.0rem;
+  line-height: 10.0rem;
+  background-color: #ebb94d;
+  border-radius: 50%;
+  color: white;
+}
+html body main .top .top_4 .tex_1 {
+  margin-top: 3.0rem;
+  line-height: 2;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_4 .tex_1 {
+    font-size: 2.0rem;
+  }
+}
+html body main .top .top_4 .tex_2 {
+  margin-top: 3.0rem;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_4 .tex_2 .sp {
+    display: none;
+  }
+}
+html body main .top .top_4 .tex_3 {
+  margin: 2.0rem 2.0rem;
+  border: 4px solid #ebb94d;
+  background-color: white;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_4 .tex_3 .tex_1 {
+    font-size: 1.5rem;
+  }
+  html body main .top .top_4 .tex_3 .tex_1 .sp {
+    display: none;
+  }
+}
+html body main .top .top_4 .tex_3 .table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+html body main .top .top_4 .tex_3 .table .elem_1 {
+  margin: 1.0rem;
+  text-align: center;
+}
+html body main .top .top_4 .tex_3 .table .elem_1 p {
+  font-size: 1.2rem;
+}
+html body main .top .top_5 {
+  background-image: url("../img/aboutsecondbgsp.jpg");
+  padding: 8.0rem 4.0rem 4.0rem 4.0rem;
+}
+html body main .top .top_5 .tex_1 {
+  color: white;
+  font-size: 2.0rem;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_5 .tex_1 .sp {
+    display: none;
+  }
+}
+html body main .top .top_5 .tex_2 {
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 4.0rem;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_5 .tex_2 .sp {
+    display: none;
+  }
+}
+html body main .top .top_5 .tex_3 {
+  color: white;
+  font-size: 1.5rem;
+  padding-top: 4.0rem;
+  padding-bottom: 1.0rem;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_5 .tex_3 .sp {
+    display: none;
+  }
+}
+html body main .top .top_5 .tex_3 span {
+  color: #ebb94d;
+}
+html body main .top .top_5 .container {
+  padding-bottom: 5.0rem;
+}
+html body main .top .top_5 .container .elem {
+  background-color: white;
+  margin: 2.0rem 1.0rem;
+  border-radius: 1.0rem;
+  font-size: 1.2rem;
+}
+html body main .top .top_5 .container .elem .num {
+  border-radius: 0.5rem;
+  background-color: #ebb94d;
+  color: white;
+}
+html body main .top .top_5 .container .elem .cap_1 {
+  padding: 1em;
+}
+html body main .top .top_6 {
+  background-color: #007dff;
+  padding: 3.0rem 2.0rem;
+}
+html body main .top .top_6 .tex_1 {
+  color: white;
+}
+html body main .top .top_6 .empha {
+  color: #ebb94d;
+}
+html body main .top .top_6 .tex_2 {
+  color: white;
+}
+html body main .top .top_7 {
+  padding: 4.0rem 4.0rem;
+}
+html body main .top .top_7 .tex_1 {
+  padding: 3.0rem 0rem;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_7 .tex_1 {
+    font-size: 2.0rem;
+  }
+}
+html body main .top .top_7 .tex_2 {
+  text-align: center;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_7 .tex_2 .sp {
+    display: none;
+  }
+}
+html body main .top .top_7 .table {
+  margin: 2.0rem 1.0rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+html body main .top .top_7 .table img {
+  width: 25%;
+  padding: 0.5rem;
+  object-fit: contain;
+}
+html body main .top .top_8 {
+  padding: 3.0rem 2.0rem;
+  background-color: #fef5e0;
+  font-size: 1.5rem;
+}
+html body main .top .top_8 .tex_1 {
+  line-height: 2;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_8 .tex_1 .sp {
+    display: none;
+  }
+}
+html body main .top .top_8 .tex_1 .tex_1_1 {
+  font-size: 1.5rem;
+}
+@media (min-width: 54rem) {
+  html body main .top .top_8 .tex_1 .tex_1_1 {
+    font-size: 2.0rem;
+  }
+}
+html body main .top .top_8 .box {
+  margin: 2.0rem;
+  width: fit-content;
+}
+html body main .top .top_8 .box .img {
+  text-align: center;
+  margin: auto;
+}
+html body main .top .top_8 .box .img img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 80.0rem;
+}
+html body main .top .top_8 .box .cap_1 {
+  color: #ebb94d;
+}
+html body main .top .top_8 .box .cap_2 {
+  font-size: 1.5rem;
+}
+html body main .top .top_8 .tex_2 {
+  border: 4px solid #ebb94d;
+  border-radius: 0.4rem;
+  background-color: white;
+  padding: 2.0rem 2.0rem;
+  margin: 2.0rem 2.0rem;
+}
+html body main .top .top_8 .tex_2 .tex_2_1 {
+  color: #ebb94d;
+  padding: 2.0rem;
+  line-height: 1.5;
+}
+html body main .top .top_8 .tex_2 .tex_2_2 {
+  line-height: 1.5;
+  padding-bottom: 2.0rem;
+}
+html body main .top .top_8 .tex_2 .tex_2_3 {
+  font-size: 1.2rem;
+}
+html body main .top .top_8 .tex_3 {
+  text-align: center;
+  font-size: 1.0rem;
+}
+html body main .middle .middle_1 {
+  background-image: url("../img/teacherbg.jpg");
+  background-size: cover;
+  width: 100%;
+  color: white;
+}
+html body main .middle .middle_1 .title {
+  font-size: 2.0rem;
+  line-height: 2.0;
+  padding: 8.0rem 0rem 5.0rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_1 .title {
+    font-size: 2.0rem;
+  }
+}
+html body main .middle .middle_1 .tex_1 {
+  font-size: 1.5rem;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_1 .tex_1 {
+    padding-bottom: 8.0rem;
+  }
+  html body main .middle .middle_1 .tex_1 .sp {
+    display: none;
+  }
+}
+html body main .middle .middle_1 .col-lg-6 .box {
+  text-align: center;
+  margin: 8.0rem 1.0rem;
+  padding: 0rem 1.0rem 2.0rem 1.0rem;
+  border: 4px solid white;
+  position: relative;
+}
+html body main .middle .middle_1 .col-lg-6 .img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -20%;
+  text-align: center;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_1 .col-lg-6 .img {
+    top: -50%;
+  }
+}
+html body main .middle .middle_1 .col-lg-6 .img img {
+  border-radius: 50%;
+  width: 10.0rem;
+  object-fit: contain;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_1 .col-lg-6 .img img {
+    width: 20.0rem;
+    object-fit: contain;
+  }
+}
+html body main .middle .middle_1 .col-lg-6 .tex {
+  padding-top: 6.0rem;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_1 .col-lg-6 .tex {
+    padding-top: 12.0rem;
+  }
+}
+html body main .middle .middle_2 .title {
+  background-color: #ebb94d;
+  padding: 2.0rem;
+  text-align: center;
+}
+html body main .middle .middle_2 .title .mk {
+  width: 10.0rem;
+  height: 10.0rem;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  color: #ebb94d;
+  line-height: 10.0rem;
+}
+html body main .middle .middle_2 .title .cap {
+  color: white;
+  padding: 4.0rem 0rem;
+}
+html body main .middle .middle_2 .tex_1 {
+  padding: 4.0rem .0rem;
+}
+html body main .middle .middle_2 .tex_1 .tex_1_1 {
+  font-size: 2.0rem;
+}
+html body main .middle .middle_2 .tex_1 .tex_1_2 {
+  margin-bottom: 3.0rem;
+  font-size: 1.2rem;
+}
+html body main .middle .middle_2 .tex_1 .tex_1_3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3.0rem;
+}
+html body main .middle .middle_2 .container .box {
+  margin-bottom: 1.0rem;
+}
+html body main .middle .middle_2 .container .box .img img {
+  border: 4px solid #ebb94d;
+  width: 100%;
+  object-fit: contain;
+}
+html body main .middle .middle_2 .container .box .cap {
+  font-size: 1.2rem;
+}
+html body main .middle .middle_2 .container .box .cap .cap_1 {
+  margin-bottom: 1.0rem;
+}
+html body main .middle .middle_2 .container .box .cap .cap_2 {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+html body main .middle .middle_3 {
+  background-image: url("../img/classbg.jpg");
+  margin: 4.0rem 0rem 0rem 0rem;
+  padding: 4.0rem 0rem;
+}
+html body main .middle .middle_3 .title_1 {
+  font-size: 2.0rem;
+  color: white;
+}
+html body main .middle .middle_3 .title_2 {
+  text-align: center;
+  color: white;
+}
+html body main .middle .middle_3 .container .box {
+  background-color: white;
+  border: 4px solid #1d61ff;
+  border-radius: 0.4rem;
+  margin: 1.0rem 1.0rem;
+}
+html body main .middle .middle_3 .container .box .title {
+  padding: 1.0rem 0rem;
+  color: white;
+  background-color: #1d61ff;
+}
+html body main .middle .middle_3 .container .box .tex_1_1 {
+  padding: 1.0rem;
+  border-bottom: 1px dotted #e5e5e5;
+}
+html body main .middle .middle_4 {
+  background-color: #1d61ff;
+  color: white;
+  padding: 3.0rem 0rem;
+}
+html body main .middle .middle_5 .title {
+  padding: 4.0rem 0rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_5 .title {
+    font-size: 2.0rem;
+  }
+}
+html body main .middle .middle_5 .title .img {
+  display: none;
+  margin: 3.0rem 0rem;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_5 .title .img {
+    display: block;
+    font-size: 2.0rem;
+  }
+}
+html body main .middle .middle_5 .title .img img {
+  width: 100%;
+  object-fit: contain;
+}
+html body main .middle .middle_5 .menu {
+  margin: 0.3rem 1.0rem;
+  padding: 0.1rem 0rem;
+  background-color: #fef5e0;
+  /* background-color: red; */
+}
+html body main .middle .middle_5 .menu .title {
+  display: flex;
+  align-items: center;
+  height: 3.2rem;
+  /* width:18.0rem; */
+  padding: 1.0rem 0rem;
+  margin: 2.0rem;
+}
+html body main .middle .middle_5 .menu .title .icon {
+  padding: 0rem 1.0rem;
+}
+html body main .middle .middle_5 .menu .title .icon img {
+  width: 3.0rem;
+}
+html body main .middle .middle_5 .menu .title .title_1 {
+  box-sizing: border-box;
+  display: inline-block;
+}
+html body main .middle .middle_5 .menu .title .switch {
+  margin-left: auto;
+}
+html body main .middle .middle_5 .menu .tex {
+  display: none;
+  padding: 1.0rem;
+  /* border: 4px solid blue; */
+}
+html body main .middle .middle_5 .menu .tex .tex_1 {
+  font-weight: bold;
+  margin-bottom: 1.0rem;
+}
+html body main .middle .middle_5 .menu .tex .tex_2 {
+  margin-bottom: 1.0rem;
+  font-weight: bold;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_5 .menu {
+    background-color: #fef5e0;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    margin: 1.0rem;
+    padding: 2.0rem;
+  }
+  html body main .middle .middle_5 .menu .title {
+    display: block;
+    margin: 0rem auto;
+    width: 30%;
+    height: 20.0rem;
+  }
+  html body main .middle .middle_5 .menu .title .icon img {
+    width: 10.0rem;
+  }
+  html body main .middle .middle_5 .menu .title .switch {
+    display: none;
+  }
+  html body main .middle .middle_5 .menu .tex {
+    display: block;
+    width: 70%;
+  }
+  html body main .middle .middle_5 .menu .tex .tex_1 {
+    font-weight: bold;
+    padding-bottom: 2.0rem;
+  }
+  html body main .middle .middle_5 .menu .tex .tex_2 {
+    font-weight: bold;
+    padding-bottom: 2.0rem;
+  }
+  html body main .middle .middle_5 .menu .tex .tex_3 {
+    font-size: 1.2rem;
+  }
+}
+html body main .middle .middle_6 {
+  padding: 4.0rem 2.0rem;
+  background-image: url("../img/bangkokbg.jpg");
+  background-size: cover;
+  width: 100%;
+}
+html body main .middle .middle_6 .title {
+  color: white;
+  padding: 1.0rem;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_6 .title {
+    text-align: left;
+  }
+}
+html body main .middle .middle_6 .tex_1 {
+  padding: 1.0rem;
+  color: white;
+}
+html body main .middle .middle_6 .tex_2 {
+  padding: 1.0rem;
+  color: white;
+  font-weight: bold;
+}
+html body main .middle .middle_6 .tex_3 {
+  padding: 1.0rem;
+  color: white;
+  font-weight: bold;
+}
+html body main .middle .middle_7 {
+  background-color: #ebb94d;
+  padding: 4.0rem 2.0rem;
+}
+html body main .middle .middle_7 .title {
+  display: flex;
+  justify-content: center;
+  padding: 2.0rem 0rem;
+}
+html body main .middle .middle_7 .tex_1 {
+  padding: 2.0rem 0rem;
+  font-style: 1.5rem;
+}
+html body main .middle .middle_7 .tex_1 .tex_1_1 {
+  color: white;
+}
+@media (min-width: 54rem) {
+  html body main .middle .middle_7 .tex_1 .tex_1_2 .sp {
+    display: none;
+  }
+}
+html body main .middle .middle_7 .tex_1 .tex_1_3 {
+  color: white;
+}
+html body main .middle .middle_7 .box {
+  position: relative;
+  text-align: center;
+  margin: 8.0rem 1.0rem 1.0rem 1.0rem;
+  padding: 4.0rem 1.0rem 2.0rem 1.0rem;
+  border: 4px solid white;
+}
+html body main .middle .middle_7 .box .tex_2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -10%;
+}
+html body main .middle .middle_7 .box .tex_2 .tex_2_1 {
+  background-color: #ebb94d;
+  display: inline-block;
+  padding: 0rem 2.0rem;
+}
+html body main .middle .middle_7 .box .tex_3 {
+  padding: 1.0rem 1.0rem;
+}
+html body main .middle .middle_7 .box .tex_3 .tex_3_1 {
+  display: flex;
+  align-items: center;
+  padding: 1.0rem;
+}
+html body main .middle .middle_7 .box .tex_3 .tex_3_1 .icon {
+  min-width: 4.0rem;
+  height: 4.0rem;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  color: #ebb94d;
+  font-size: 1.0rem;
+  line-height: 4.0rem;
+  margin: 0rem 1rem;
+}
+html body main .middle .middle_7 .box .tex_3 .tex_3_1 .cap {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+html body main .middle .middle_8 {
+  background-image: url("../img/specialdetail.jpg");
+  background-size: cover;
+  width: 100%;
+  padding: 4.0rem 3.0rem;
+  color: white;
+}
+html body main .middle .middle_8 .title {
+  padding: 2.0rem;
+}
+html body main .middle .middle_8 .tex_1 {
+  font-size: 1.2rem;
+  padding: 2.0rem;
+}
+html body main .middle .middle_8 .tex_2 {
+  line-height: 2;
+  padding: 2.0rem;
+}
+html body main .middle .middle_8 .tex_3 {
+  font-size: 1.0rem;
+  padding: 2.0rem;
+}
+html body main .bottom .bottom_1 {
+  background-color: #ebb94d;
+}
+html body main .bottom .bottom_1 .title {
+  padding: 3.0rem 0rem;
+}
+html body main .bottom .bottom_1 form .inputs {
+  text-align: center;
+}
+html body main .bottom .bottom_1 form .inputs input[type="text"], html body main .bottom .bottom_1 form .inputs input[type="email"] {
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.0rem;
+  margin: 1.0rem;
+  font-size: 1.5rem;
+  width: 80%;
+}
+html body main .bottom .bottom_1 form .inputs textarea {
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2.0rem;
+  font-size: 1.5rem;
+  width: 80%;
+  height: 10.0rem;
+}
+html body main .bottom .bottom_1 form .inputs input[type="submit"] {
+  background-color: #da6b64;
+  border: none;
+  margin: auto;
+  border-radius: 5.0rem;
+  margin: 1.0rem;
+  padding: 2.0rem;
+  color: white;
+  font-size: 2.0rem;
+  width: 80%;
+}
+html body main .bottom .bottom_2 .title {
+  padding: 5.0rem 0rem;
+}
+html body main .bottom .bottom_2 .menu {
+  margin: 0.3rem 1.0rem;
+  padding: 0.1rem 0rem;
+  bottom: 2px solid #ececec !important;
+  /* background-color: red; */
+}
+html body main .bottom .bottom_2 .menu .title {
+  display: flex;
+  align-items: center;
+  height: 3.2rem;
+  /* width:18.0rem; */
+  padding: 1.0rem 0rem;
+  margin: 2.0rem;
+}
+html body main .bottom .bottom_2 .menu .title .icon {
+  padding: 0rem 1.0rem;
+}
+html body main .bottom .bottom_2 .menu .title .icon img {
+  width: 3.0rem;
+}
+html body main .bottom .bottom_2 .menu .title .title_1 {
+  box-sizing: border-box;
+  display: inline-block;
+}
+html body main .bottom .bottom_2 .menu .title .switch {
+  margin-left: auto;
+}
+html body main .bottom .bottom_2 .menu .tex {
+  display: none;
+  padding: 1.0rem 3.0rem;
+}
+html body main .bottom .bottom_2 .menu .tex .tex_1 {
+  font-weight: bold;
+  margin-bottom: 1.0rem;
+}
+html body footer .footer_1 {
+  background-color: #ececec;
+}
+html body footer .footer_1 .tex {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2.0rem 0rem;
+}
+html body footer .footer_1 .link {
+  display: flex;
+  justify-content: center;
+}
+html body footer .footer_1 .link .twitter {
+  border-radius: 10%;
+  background-color: #52c5fe;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+}
+html body footer .footer_1 .link .twitter .fa-twitter {
+  color: white;
+}
+html body footer .footer_1 .link .facebook {
+  border-radius: 10%;
+  background-color: #4360e0;
+  color: white;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+  font-size: 1.2rem;
+}
+html body footer .footer_1 .link .facebook .fa-heart {
+  color: white;
+}
+html body footer .footer_1 .link .share {
+  border-radius: 10%;
+  background-color: #4360e0;
+  color: white;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+  font-size: 1.2rem;
+}
+html body footer .footer_1 .tex_2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

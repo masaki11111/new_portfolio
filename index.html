@@ -34,12 +34,15 @@
 
   <!-- lg以上の時出現 flexboxを使ったやり方-->
   <main>
+
     <nav>
+      <!-- <li><a href="#">Home</a></li> -->
       <ul>
+        <!-- <li><a href="#">Home</a></li> -->
         <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Product</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#product">Product</a></li>
         <!-- <li>Contact</li> -->
       </ul>
     </nav>
@@ -59,7 +62,10 @@
         Welcome to My Portfolio
       </div>
     </div>
+
+<a name="about"></a>
     <div class="top">
+      <!-- <li><a href="#">Home</a></li> -->
       <div class="container">
         <!-- styleでトリミング位置を指定してからのbootstrapでのレスポンシブ化の方法がわからないのでとりあえず，あらかじめ切り取ったものを使った -->
         <div class="row">
@@ -84,6 +90,7 @@
         </div>
       </div>
     </div>
+    <a name="skills"></a>
     <div class="middle">
       <div class="container-fluid">
         <div class="row" >
@@ -130,6 +137,7 @@
       </div>
     </div>
     <!-- </div> -->
+    <a name="product"></a>
     <div class="bottom">
       <div class="container-fluid">
         <div class="B_1">
@@ -139,9 +147,9 @@
       <div class="row">
         <!-- text-align:center;で中央揃え -->
         <div class="col-12">
-            <a href="scraping.html" target="_blank">
+            <a href="https://github.com/masaki11111/scraping" target="_blank">
             <div class="sample2">
-              <img src="img/airbnb_sample.jpg" alt="フルーツ寄せ集め">
+              <img src="img/rakuten.png" alt="フルーツ寄せ集め" class="img_resize">
               <div class="mask">
                 <div class="caption">自動化ツール</div>
               </div>
@@ -149,26 +157,34 @@
           </a>
         </div>
         <div class="col-12">
-            <a href="web.html" target="_blank">
+            <a href="./aibbnb/index.html" target="_blank">
             <div class="sample2">
-              <img src="img/rakuten.png" alt="フルーツ寄せ集め" class="img_resize">
+              <img src="img/airbnb_sample.jpg" alt="フルーツ寄せ集め">
               <div class="mask">
-                <div class="caption">ウェブ制作</div>
+                <div class="caption">【模写】airbnb</div>
               </div>
             </div>
           </a>
         </div>
         <div class="col-12">
-            <a href="wordpress.html" target="_blank">
+            <a href="./isara/main.html" target="_blank">
             <div class="sample2">
-              <img src="img/ekiten.jpg" alt="フルーツ寄せ集め" class="img_resize">
+              <img src="img/isara.png" alt="フルーツ寄せ集め" class="img_resize">
               <div class="mask">
-                <div class="caption"></div>
+                <div class="caption">【模写】isara</div>
               </div>
             </div>
           </a>
-          <!-- <img src="img/airbnb_sample.jpg"class="img_resize" > -->
-
+        </div>
+        <div class="col-12">
+            <a href="./fiction/ec_1.html" target="_blank">
+            <div class="sample2">
+              <img src="img/fiction.png" alt="フルーツ寄せ集め" class="img_resize">
+              <div class="mask">
+                <div class="caption">【自作】自転車サイト</div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -231,17 +247,17 @@
   <!-- <div class="footer_1"> -->
   <div class="top_line" >
       <div class="link">
-        <a href="https://twitter.com/ALTAS0316">
+        <a href="https://twitter.com/ALTAS0316" target="_blank">
           <div class="twitter">
             <i class="fab fa-twitter"></i>
           </div>
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100014681196466">
+        <a href="https://www.facebook.com/profile.php?id=100014681196466" target="_blank">
           <div class="facebook">
             <i class="fab fa-facebook-f"></i>
           </div>
         </a>
-        <a href="https://www.linkedin.com/feed/?trk=onboarding-landing">
+        <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" target="_blank">
           <div class="facebook">
             <i class="fab fa-linkedin-in"></i>
           </div>

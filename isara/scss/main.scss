@@ -1,0 +1,1079 @@
+
+// color
+$color-btn: #da6b64;
+$color-empha: #ebb94d;
+$color-bcg-2: #fef5e0;
+
+//
+
+$sp: .0rem; // タブレット
+$tb: 54.0rem; // タブレット
+$pc: 72.0rem; // PC
+
+@mixin sp {
+  @media (min-width: ($sp)) {
+    @content;
+  }
+}
+// @mixin sptb {
+//   @media (min-width: ($sp + 1px) and max-width:($pc - 1px)) {
+//     @content;
+//   }
+// }
+@mixin tb {
+  @media (min-width: ($tb)) {
+    @content;
+  }
+}
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+
+
+.font-std{
+  text-align: center;
+  font-weight: bold;
+}
+
+.border{
+  border-bottom:1.0rem solid black !important;
+}
+
+html{
+  // font-size: 62.5%;
+  font-size: 62.5%;
+  @include tb {
+    font-size: 78.125%;
+  }
+
+
+body{
+  font-size: 1.5em;
+  header{
+    .fix{
+      position:fixed;
+      width:100%;
+      // %指定でいい感じにできないか
+      height:6.8rem;
+      top: .0rem;
+      left: .0rem;
+      background-color: white;
+      z-index: 10;
+      .header_style{
+        display: flex;
+        .header_1{
+          margin: 1.0rem 1.0rem;
+          font-weight:bold;
+          font-size: 1.0rem;
+          @include tb {
+            display: flex;
+            flex-flow: row-reverse;
+            align-items: flex-end;
+            margin-bottom: 2.0rem;
+          }
+          .tex{
+          }
+          .header_1_1{
+            img{
+              width: 10.0rem;
+            }
+          }
+        }
+        .header_3{
+          height:6.8rem;
+          margin-left: auto;
+          background-color:$color-btn;
+          color: rgb(0, 0, 0);
+          padding:1.0rem;
+          .img{
+            @extend .font-std;
+            img{
+              width:2.0rem;
+            }
+          }
+          .text{
+            color:white;
+            @extend .font-std;
+          }
+          // }
+        }
+      }
+    }
+  }
+  main{
+    .pagetop{
+      position: relative;
+      .icon{
+        position: fixed;
+        background-color: #ececec;
+        width:4.0rem;
+        height:4.0rem;
+        line-height: 2.0;
+        text-align: center;
+        bottom:2.0rem;
+        right:1.0rem;
+      }
+    }
+    // background-image: url("../img/mainsp.jpg");
+    .top{
+
+      margin-top:6.8rem;
+      .top_1{
+        height:30.0rem;
+        background-size:cover;
+        background-image: url("../img/mainsp.jpg");
+        .logo{
+          // margin: auto;
+          text-align: center;
+          img{
+            margin-top: 4.0rem;
+            width: 30.0rem;
+            // margin: auto;
+
+          }
+        }
+        .text{
+          margin-top: 7.0rem;
+          @extend .font-std;
+        }
+      }
+      .top_2{
+        background-color: $color-empha;
+        padding: 2.0rem 1.0rem;
+        .tex_1{
+          @extend .font-std;
+          color:white;
+          line-height: 2;
+
+        }
+        .tex_2{
+          // なぜか背景が白になる
+          text-align: center;
+          @include tb {
+            br{
+              display: none;
+            }
+          }
+        }
+        .button{
+          background-color: $color-btn;
+          border-radius: 5.0rem;
+          margin: 1.0rem;
+          .text{
+            @extend .font-std;
+            color:white;
+            font-size:2.0rem;
+            padding:2.0rem;
+            @include tb {
+              br{
+                display: none;
+              }
+            }
+          }
+
+        }
+        .tex{
+          @extend .font-std;
+          margin-top:3.0rem;
+          color: white;
+          @include tb {
+            br{
+              display: none;
+            }
+          }
+
+        }
+        .link{
+          display: flex;
+          // margin: auto;
+          justify-content: center;
+          .twitter{
+            border-radius: 10%;
+            background-color:rgb(82, 197, 254);
+            color: white;
+            padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+            font-size: 1.2rem;
+            margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+            .fa-twitter{
+              color: white;
+            }
+          }
+          .facebook{
+            border-radius: 10%;
+            background-color:rgb(67, 96, 224);
+            color: white;
+            padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+            margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+            font-size: 1.2rem;
+            .fa-heart{
+              color: white;
+            }
+          }
+          .share{
+            border-radius: 10%;
+            background-color:rgb(67, 96, 224);
+            color: white;
+            padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+            margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .top_3{
+        margin:0rem 4.0rem;
+        .tex_1{
+          font-size: 1.5rem;
+          @extend .font-std;
+          margin:4.0rem auto;
+          line-height: 1.5;
+          @include tb {
+            font-size: 2.0rem;
+            .sp{
+              display: none;
+            }
+          }
+        }
+        .tex_2{
+          text-align: center;
+          margin-bottom:3.0rem;
+          line-height: 1.5;
+          @include tb {
+            font-size: 1.2rem;
+            .sp{
+              display: none;
+            }
+          }
+        }
+        .tex_3{
+          line-height: 1.5;
+          //背景画像用
+          background-image: url("../img/introbottom.jpg");
+          background-size: 100%;
+          background-repeat : no-repeat;
+          text-align: center;
+          padding-bottom:10.0rem;
+          width:100%;
+          @include tb {
+            font-size: 1.2rem;
+            .sp{
+              display: none;
+            }
+          }
+          .line{
+            // padding: .0rem;
+            display:inline-block;
+            border-bottom: 1.0rem solid $color-empha;
+            box-sizing: border-box;
+            font-weight: bold;
+          }
+        }
+      }
+      .top_4{
+        background-color: $color-bcg-2;
+        padding: 8.0rem 0rem 4.0rem .0rem;
+        position:relative;
+
+        .box{
+          position:absolute;
+          width: 100%;
+          left: 0;
+          top: -7%;
+          .logo{
+            text-align: center;
+            margin: auto;
+            width:10.0rem;
+            height:10.0rem;
+            line-height:10.0rem;
+            background-color: $color-empha;
+            border-radius: 50%;
+            color:white;
+          }
+        }
+        .tex_1{
+          @extend .font-std;
+          margin-top:3.0rem;
+          line-height: 2;
+          @include tb {
+            font-size: 2.0rem;
+          }
+        }
+        .tex_2{
+          @extend .font-std;
+          margin-top:3.0rem;
+          @include tb {
+            .sp{
+              display: none;
+            }
+          }
+
+        }
+        .tex_3{
+          margin: 2.0rem 2.0rem;
+          border: 4px solid $color-empha;
+          background-color: white;
+          .tex_1{
+            @extend .font-std;
+            @include tb {
+              font-size: 1.5rem;
+              .sp{
+                display: none;
+              }
+            }
+
+          }
+          .table{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .elem_1{
+              margin: 1.0rem;
+              text-align: center;
+              p{
+
+                // font-size: 1.0rem;
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+      .top_5{
+        background-image: url("../img/aboutsecondbgsp.jpg");
+        padding:8.0rem 4.0rem 4.0rem 4.0rem;
+        .tex_1{
+          color: white;
+          @extend .font-std;
+          font-size: 2.0rem;
+          @include tb {
+            .sp{
+              display: none;
+            }
+          }
+        }
+        .tex_2{
+          color: white;
+          @extend .font-std;
+          font-size: 1.5rem;
+          padding-top:4.0rem;
+          @include tb {
+            .sp{
+              display: none;
+            }
+          }
+        }
+        .tex_3{
+          color: white;
+          @extend .font-std;
+          font-size: 1.5rem;
+          padding-top:4.0rem;
+          padding-bottom:1.0rem;
+          @include tb {
+            .sp{
+              display: none;
+            }
+          }
+          span{
+            color:$color-empha;
+          }
+        }
+        .container{
+          padding-bottom:5.0rem;
+          .col-md-4{
+            // margin-bottom: 4.0rem;
+
+          }
+          .elem{
+            // height:100%;
+            background-color: white;
+            // padding: 2.0rem 1.0rem;
+            margin: 2.0rem 1.0rem;
+            border-radius: 1.0rem;
+            font-size: 1.2rem;
+            @extend .font-std;
+            // border: 4px solid $color-empha;
+            .num{
+              // padding-top:3.0rem 10.0rem;
+              // padding-top:1.0rem ;
+              border-radius: 0.5rem;
+              background-color: $color-empha;
+              color: white;
+
+            }
+            .cap_1{
+              padding: 1em;
+            }
+          }
+        }
+      }
+      .top_6{
+        background-color: rgb(0, 125, 255);
+        padding: 3.0rem 2.0rem;
+        @extend .font-std;
+        .tex_1{
+          color:white;
+        }
+        .empha{
+
+          color: $color-empha;
+
+        }
+        .tex_2{
+          color:white;
+
+        }
+      }
+      .top_7{
+        padding: 4.0rem 4.0rem;
+        .tex_1{
+          @extend .font-std;
+          padding: 3.0rem 0rem;
+          @include tb {
+            font-size: 2.0rem;
+          }
+        }
+        .tex_2{
+          text-align: center;
+          @include tb {
+            .sp{
+              display: none;
+            }
+          }
+
+        }
+        .table{
+          margin: 2.0rem 1.0rem;
+          display: flex;
+          justify-content: center;
+          width:100%;
+          img{
+            width:25%;
+            padding:0.5rem;
+            object-fit: contain;
+          }
+        }
+        .tex_3{
+          @extend .font-std;
+        }
+      }
+      .top_8{
+        padding: 3.0rem 2.0rem;
+        background-color: $color-bcg-2;
+        font-size:1.5rem;
+        .tex_1{
+
+          @extend .font-std;
+          line-height: 2;
+          @include tb{
+            .sp{
+              display: none;
+            }
+          }
+          .tex_1_1{
+            font-size:1.5rem;
+            @include tb{
+              font-size:2.0rem;
+            }
+          }
+        }
+        .box{
+          margin: 2.0rem;
+          width: fit-content;
+          .img{
+            text-align: center;
+            margin: auto;
+            img{
+              // width:100%;
+              object-fit: cover;
+              width: 100%;
+              max-width:80.0rem;
+            }
+          }
+          .cap_1{
+            @extend .font-std;
+            color:$color-empha;
+            // padding: 1.0rem 0rem;
+
+          }
+          .cap_2{
+            font-size: 1.5rem;
+          }
+        }
+        .tex_2{
+          @extend .font-std;
+          border: 4px solid $color-empha;
+          border-radius: 0.4rem;
+          background-color: white;
+          padding: 2.0rem 2.0rem;
+          margin: 2.0rem 2.0rem;
+          .tex_2_1{
+            color:$color-empha;
+            padding:2.0rem;
+            line-height: 1.5;
+
+          }
+          .tex_2_2{
+            // font-size: 1.5rem;
+            line-height: 1.5;
+            padding-bottom:2.0rem;
+
+          }
+          .tex_2_3{
+            font-size: 1.2rem;
+          }
+        }
+        .tex_3{
+          text-align: center;
+          font-size: 1.0rem;
+        }
+      }
+    }
+    .middle{
+      .middle_1{
+        background-image: url("../img/teacherbg.jpg");
+        background-size: cover;
+        width:100%;
+        color:white;
+        .title{
+          font-size: 2.0rem;
+          line-height: 2.0;
+          padding: 8.0rem 0rem 5.0rem 0rem;
+          display: flex;
+          justify-content: center;
+          @extend .font-std;
+          @include tb{
+            font-size:2.0rem;
+          }
+        }
+
+        .tex_1{
+          @extend .font-std;
+          font-size: 1.5rem;
+          @include tb{
+            padding-bottom:8.0rem;
+            .sp{
+              display: none;
+            }
+          }
+
+        }
+        .col-lg-6{
+          // border-radius: 4px;
+          .box{
+            text-align: center;
+            margin: 8.0rem 1.0rem;
+            padding:0rem 1.0rem 2.0rem 1.0rem;
+            border: 4px solid white;
+            position:relative;
+          }
+          .img{
+            position:absolute;
+            width: 100%;
+            left: 0;
+            // top:-5.0rem;
+            top: -20%;
+            text-align: center;
+            @include tb{
+              top: -50%;
+            }
+            img{
+              border-radius: 50%;
+              width:10.0rem;
+              object-fit: contain;
+              @include tb{
+                width:20.0rem;
+                object-fit: contain;
+              }
+
+            }
+          }
+          .tex{
+            padding-top:6.0rem;
+            @include tb{
+              padding-top:12.0rem;
+            }
+          }
+        }
+      }
+      .middle_2{
+        .title{
+          background-color:  $color-empha;
+          padding: 2.0rem;
+          text-align: center;
+          .mk{
+            // top:-3.0rem;
+            width:10.0rem;
+            height:10.0rem;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center;
+            margin: auto;
+            color:$color-empha;
+            line-height:10.0rem;
+            // vertical-align: middle;
+          }
+          .cap{
+            @extend .font-std;
+            color: white;
+            padding: 4.0rem 0rem;
+          }
+        }
+        .tex_1{
+          padding: 4.0rem .0rem;
+          .tex_1_1{
+            @extend .font-std;
+            font-size: 2.0rem;
+          }
+          .tex_1_2{
+            @extend .font-std;
+            margin-bottom:3.0rem;
+            font-size: 1.2rem;
+          }
+          .tex_1_3{
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom:3.0rem;
+          }
+        }
+        .container{
+          .box{
+            margin-bottom:1.0rem;
+            .img{
+              img{
+                border:4px solid $color-empha;
+                width:100%;
+                object-fit: contain;
+              }
+            }
+            .cap{
+              font-size: 1.2rem;
+              .cap_1{
+                margin-bottom:1.0rem;
+              }
+              .cap_2{
+                display: inline-block;
+                border-bottom: 1px solid black;
+              }
+            }
+          }
+        }
+      }
+      .middle_3{
+        background-image: url("../img/classbg.jpg");
+        margin: 4.0rem 0rem 0rem 0rem;;
+        padding: 4.0rem 0rem;
+        .title_1{
+          @extend .font-std;
+          font-size: 2.0rem;
+          color: white;
+        }
+        .title_2{
+          text-align: center;
+          color:white;
+
+        }
+        .container{
+          .box{
+            background-color: white;
+            border: 4px solid rgb(29, 97, 255);
+            border-radius: 0.4rem;
+            margin:1.0rem 1.0rem;
+            @extend .font-std;
+            .title{
+              padding:1.0rem 0rem;
+              color: white;
+              background-color: rgb(29, 97, 255);
+            }
+            .tex_1_1{
+              padding:1.0rem;
+              border-bottom: 1px dotted #e5e5e5;
+
+            }
+          }
+        }
+      }
+      .middle_4{
+        background-color: rgb(29, 97, 255);
+        color: white;
+        @extend .font-std;
+        padding: 3.0rem 0rem;
+      }
+      .middle_5{
+        .title{
+          @extend .font-std;
+          padding:4.0rem 0rem;
+          font-size:1.5rem;
+          @include tb{
+            font-size:2.0rem;
+          }
+          .img{
+            display: none;
+            @include tb{
+              display: block;
+              font-size:2.0rem;
+            }
+            margin: 3.0rem 0rem;
+            img{
+              width:100%;
+              object-fit: contain;
+            }
+          }
+        }
+          // display:none;
+          .menu{
+            margin:0.3rem 1.0rem;
+            padding: 0.1rem 0rem;
+            background-color:  $color-bcg-2;
+            /* background-color: red; */
+            .title{
+              display: flex;
+              align-items: center;
+              height:3.2rem;
+              /* width:18.0rem; */;
+              padding:1.0rem 0rem;
+              margin: 2.0rem;
+              .icon{
+                padding:0rem 1.0rem;
+                img{
+                  width:3.0rem;
+                }
+              }
+              .title_1{
+                box-sizing: border-box;
+                display: inline-block;
+
+              }
+              .switch{
+                margin-left:auto
+              }
+            }
+            .tex{
+              display: none;
+              padding:1.0rem;
+              .tex_1{
+                font-weight: bold;
+                margin-bottom: 1.0rem;
+              }
+              .tex_2{
+
+                margin-bottom: 1.0rem;
+                font-weight: bold;
+              }
+              /* border: 4px solid blue; */
+            }
+          }
+        @include tb{
+          // font-weight: bold;
+          .menu{
+            background-color:  $color-bcg-2;
+            display:flex;
+            align-items: center;
+            vertical-align: center;
+            margin:1.0rem;
+            padding: 2.0rem;
+            .title{
+              display: block;
+              margin: 0rem auto;
+              width:30%;
+              height:20.0rem;
+              .icon{
+                img{
+                  width:10.0rem;
+                }
+              }
+              .switch{
+                display: none;
+              }
+            }
+            .tex{
+              display: block;
+              width:70%;
+              .tex_1{
+                font-weight: bold;
+                padding-bottom: 2.0rem;
+              }
+              .tex_2{
+                font-weight: bold;
+                padding-bottom: 2.0rem;
+
+              }
+              .tex_3{
+                font-size:1.2rem;
+
+              }
+            }
+          }
+        }
+      }
+      .middle_6{
+        padding: 4.0rem 2.0rem;
+        background-image: url("../img/bangkokbg.jpg");
+        background-size: cover;
+        width:100%;
+        .title{
+          color:white;
+          @extend .font-std;
+          padding:1.0rem;
+          @include tb{
+            text-align: left;
+          }
+        }
+        .tex_1{
+          padding:1.0rem;
+          color:white;
+        }
+        .tex_2{
+          padding:1.0rem;
+          color:white;
+          font-weight: bold;
+        }
+        .tex_3{
+          padding:1.0rem;
+          color:white;
+          font-weight: bold;
+
+        }
+      }
+      .middle_7{
+        background-color:  $color-empha;
+        padding:4.0rem 2.0rem;
+        .title{
+          display: flex;
+          justify-content: center;
+          padding:2.0rem 0rem;
+          @extend .font-std;
+        }
+        .tex_1{
+          padding:2.0rem 0rem;
+          @extend .font-std;
+          font-style: 1.5rem;
+          .tex_1_1{
+            color:white;
+          }
+          .tex_1_2{
+            @include tb{
+              .sp{
+                display: none;
+              }
+            }
+          }
+          .tex_1_3{
+            color:white;
+          }
+
+        }
+        .box{
+          position:relative;
+          text-align: center;
+          margin: 8.0rem 1.0rem 1.0rem 1.0rem;
+          padding:4.0rem 1.0rem 2.0rem 1.0rem;
+          border: 4px solid white;
+          .tex_2{
+            position:absolute;
+            width:100%;
+            left: 0;
+            top: -10%;
+            .tex_2_1{
+              @extend .font-std;
+              background-color:  $color-empha;
+              display:inline-block;
+              padding: 0rem 2.0rem;
+            }
+          }
+          .tex_3{
+            padding:1.0rem 1.0rem;
+            .tex_3_1{
+              display: flex;
+              align-items: center;
+              padding:1.0rem;
+              .icon{
+                // widthにすると幅が短くなる
+                min-width:4.0rem;
+                height:4.0rem;
+                background-color: white;
+                border-radius: 50%;
+                text-align: center;
+                color:$color-empha;
+                font-size: 1.0rem;
+                // 垂直方向に中央揃え
+                line-height:4.0rem;
+                margin: 0rem 1rem;
+              }
+              .cap{
+                color: white;
+                font-weight: bold;
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+      .middle_8{
+        background-image: url("../img/specialdetail.jpg");
+        background-size: cover;
+        width:100%;
+        padding:4.0rem 3.0rem;
+        color: white;
+        .title{
+          @extend .font-std;
+          padding:2.0rem;
+        }
+        .tex_1{
+
+          @extend .font-std;
+          font-size: 1.2rem;
+          padding:2.0rem;
+        }
+        .tex_2{
+          @extend .font-std;
+          line-height:2;
+          padding:2.0rem;
+        }
+        .tex_3{
+          @extend .font-std;
+          font-size: 1.0rem;
+          padding:2.0rem;
+        }
+      }
+    }
+    .bottom{
+      .bottom_1{
+        background-color:  $color-empha;
+        .title{
+          @extend .font-std;
+          padding: 3.0rem 0rem;
+        }
+        form{
+          .inputs{
+            text-align: center;
+            input[type="text"],input[type="email"]{
+
+              background-color: white;
+              border: none;
+              border-radius:0.5rem;
+              padding:1.0rem;
+              margin:1.0rem;
+              font-size: 1.5rem;
+              width:80%;
+            }
+            textarea{
+              background-color: white;
+              border: none;
+              border-radius:0.5rem;
+              margin:2.0rem;
+              font-size: 1.5rem;
+              width:80%;
+              height:10.0rem;
+            }
+            input[type="submit"]{
+              background-color: $color-btn;
+              border:none;
+              margin: auto;
+              @extend .font-std;
+              border-radius: 5.0rem;
+              margin: 1.0rem;
+              padding:2.0rem;
+              color:white;
+              font-size:2.0rem;
+              width:80%;
+            }
+          }
+        }
+      }
+      .bottom_2{
+        @extend .font-std;
+        .title{
+          padding:5.0rem 0rem;
+        }
+        .menu{
+          margin:0.3rem 1.0rem;
+          padding: 0.1rem 0rem;
+          bottom: 2px solid #ececec !important;
+          // background-color:  $color-bcg-2;
+          /* background-color: red; */
+          .title{
+            display: flex;
+            align-items: center;
+            height:3.2rem;
+            /* width:18.0rem; */;
+            padding:1.0rem 0rem;
+            margin: 2.0rem;
+            .icon{
+              padding:0rem 1.0rem;
+              img{
+                width:3.0rem;
+              }
+            }
+            .title_1{
+              box-sizing: border-box;
+              display: inline-block;
+
+            }
+            .switch{
+              margin-left:auto
+            }
+          }
+          .tex{
+            display: none;
+            padding:1.0rem 3.0rem;
+            .tex_1{
+              font-weight: bold;
+              margin-bottom: 1.0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    .footer_1{
+      background-color: #ececec;
+      .tex{
+        text-align: center;
+        font-size:1.2rem;
+        padding: 2.0rem 0rem;
+      }
+      .link{
+        display: flex;
+        justify-content: center;
+        .twitter{
+          border-radius: 10%;
+          background-color:rgb(82, 197, 254);
+          color: white;
+          font-size: 1.2rem;
+          padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+          margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+          .fa-twitter{
+            color: white;
+          }
+        }
+        .facebook{
+          border-radius: 10%;
+          background-color:rgb(67, 96, 224);
+          color: white;
+          padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+          margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+          font-size: 1.2rem;
+          .fa-heart{
+            color: white;
+          }
+        }
+        .share{
+          border-radius: 10%;
+          background-color:rgb(67, 96, 224);
+          color: white;
+          padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+          margin: 0.5rem 0.2rem 2.0rem 0.2rem;
+          font-size: 1.2rem;
+        }
+      }
+      .tex_2{
+        font-size:1.2rem;
+        text-align: center;
+      }
+    }
+  }
+}
+}
